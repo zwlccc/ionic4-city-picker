@@ -134,7 +134,7 @@ Set `disabled` to `true` to prevent interaction.
 |`cancelText`|The text to display on the picker's cancel button.| `string` | - | `'Cancel'` |
 |`disabled`|If true, the user cannot interact with the city.| `boolean \| undefined` | - | `false` |
 |`doneText`|The text to display on the picker's "Done" button.| `string` | - | `'Done'` |
-|`mode`|The mode determines which platform styles to use.| `"ios" /| "md"` | - | `undefined` |
+|`mode`|The mode determines which platform styles to use.| `"ios" \| "md"` | - | `undefined` |
 |`name`|The name of the control, which is submitted with the form data.| `String` | - | `this.inputId`|
 |`placeholder`|The text to display when there's no city selected yet. Using lowercase to match the input attribute| `string` | - | `null \| string \| undefined` |
 |`readonly`|If `true`, the city appears normal but is not interactive.| `boolean` | - | `false`
