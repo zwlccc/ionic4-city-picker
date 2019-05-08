@@ -386,7 +386,7 @@ export class PickerColumnCmp implements ComponentInterface {
           <Button
             type="button"
             class={{ 'picker-opt': true, 'picker-opt-disabled': !!o.disabled }}
-            **style={{ transform: o.transform ? o.transform : 'translate3d(0px, -9999px, 90px)', 'transition-duration': o.duration ? o.duration: TRANSITION_DURATION + 'ms' }}**
+            style={{ transform: o.transform ? o.transform : 'translate3d(0px, -9999px, 90px)', 'transition-duration': o.duration ? o.duration: TRANSITION_DURATION + 'ms' }}
             opt-index={index}
           >
             {o.text}
