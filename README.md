@@ -1,6 +1,6 @@
 # Ionic4CityPicker
 
-Ion City Picker--An Ionic4 Custom Picker Component
+Ionic4 City Picker--An Ionic4 Custom Picker Component
 
 **For ionic 2.x or 3.x, please use ionic2-city-picker
 
