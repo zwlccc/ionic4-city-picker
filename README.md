@@ -11,6 +11,13 @@ Github: [ionic2-city-picker](https://github.com/hsuanxyz/ionic2-city-picker)
 
 ![Picker with Dependent Columns](https://github.com/zwlccc/ionic4-city-picker/blob/master/img/dependent.gif?raw=true)
 
+### PickerController doesn't show correctly
+![Picker with Dependent Columns](https://github.com/zwlccc/ionic4-city-picker/blob/master/img/repeatcss.gif?raw=true)
+## If you project have this happens,you need:
+1.download ionic core([ionic](https://github.com/ionic-team/ionic)) ;
+2.modify picker-column.tsx file([just here](https://github.com/zwlccc/ionic4-city-picker/blob/master/picker-column/picker-column.tsx)).
+3.```npm run build``` ionic/core
+4.copy ```dist``` folder to ```node_modules\@ionic\core```,overlay folder.
 ## Installation
 ```
 npm install ionic4-city-picker --save
@@ -119,7 +126,6 @@ export class HomePage {
         <ionic4-city-picker [citiesData]="cityData" (ionChange)=onCityChange($event)></ionic4-city-picker>
     </ion-item>
 ```
-**Note: Don't miss the `item-content` attribute**
 
 Set `disabled` to `true` to prevent interaction.
 
