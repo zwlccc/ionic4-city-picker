@@ -1,26 +1,23 @@
 {
   "name": "ionic4-city-picker",
-  "version": "0.0.1",
-  "description": "ionic4",
-  "main": "index.js",
-  "types": "./index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.3",
+  "description": "city picker for ionic4",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
   },
-  "files": [
-    "index.js",
-    "index.d.ts",
-    "src/*.js",
-    "src/*.d.ts",
-    "src/**/*.js",
-    "src/**/*.d.ts",
-    "README.md",
-    "LICENSE",
-    "package.json"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lzwccc/ionic4-city-picker.git"
+  "main": "bundles/ionic4-city-picker.umd.js",
+  "module": "fesm5/ionic4-city-picker.js",
+  "es2015": "fesm2015/ionic4-city-picker.js",
+  "esm5": "esm5/ionic4-city-picker.js",
+  "esm2015": "esm2015/ionic4-city-picker.js",
+  "fesm5": "fesm5/ionic4-city-picker.js",
+  "fesm2015": "fesm2015/ionic4-city-picker.js",
+  "typings": "ionic4-city-picker.d.ts",
+  "metadata": "ionic4-city-picker.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.13.8",
@@ -32,7 +29,7 @@
     "@angular/compiler-cli": "~7.2.2",
     "@angular/language-service": "~7.2.2",
     "@ionic/angular-toolkit": "~1.5.1",
-    "@types/node": "~10.14.2",
+    "@types/node": "~12.0.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "codelyzer": "~4.5.0",
@@ -45,10 +42,12 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
     "ts-node": "~8.1.0",
-    "tsickle": ">=0.34.0",
-    "tslib": "^1.9.0",
     "tslint": "~5.16.0",
     "typescript": "~3.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwlccc/ionic4-city-picker.git"
   },
   "keywords": [
     "ionic4",
@@ -56,10 +55,10 @@
     "picker",
     "city-picker"
   ],
-  "author": "lzwccc",
+  "author": "zwlccc",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lzwccc/ionic4-city-picker/issues"
+    "url": "https://github.com/zwlccc/ionic4-city-picker/issues"
   },
-  "homepage": "https://github.com/lzwccc/ionic4-city-picker#readme"
+  "homepage": "https://github.com/zwlccc/ionic4-city-picker#readme"
 }
