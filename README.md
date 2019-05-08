@@ -116,7 +116,7 @@ export class HomePage {
 
 ```html
     <ion-item>
-        <ion-city-picker [citiesData]="cityData" (ionChange)=onCityChange($event)></ion-city-picker>
+        <ionic4-city-picker [citiesData]="cityData" (ionChange)=onCityChange($event)></ionic4-city-picker>
     </ion-item>
 ```
 **Note: Don't miss the `item-content` attribute**
@@ -125,7 +125,7 @@ Set `disabled` to `true` to prevent interaction.
 
 ```html
     <ion-item>
-        <ion-city-picker [citiesData]="cityData" [disabled]="true" (ionChange)=onCityChange($event)></ion-city-picker>
+        <ionic4-city-picker [citiesData]="cityData" [disabled]="true" (ionChange)=onCityChange($event)></ionic4-city-picker>
     </ion-item>
 ```
 ## Attributes
