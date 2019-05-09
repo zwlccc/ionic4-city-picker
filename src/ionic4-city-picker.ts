@@ -176,6 +176,13 @@ export class IonCityPicker implements AfterContentInit, ControlValueAccessor {
     this.open();
   }
 
+  @HostListener('keyup', ['$event.target'])
+  onKeyup(ev: UIEvent) {
+    if (!this.isExpanded) {
+      this.open();
+    }
+  }
+
   private async open() {
     if (this.disabled || this.isExpanded) {
       return;
@@ -186,6 +193,7 @@ export class IonCityPicker implements AfterContentInit, ControlValueAccessor {
     this.isExpanded = true;
 
     picker.onDidDismiss().then(() => {
+      this.updateCityValue(this.value);
       this.isExpanded = false;
       this.setFocus();
     });
@@ -246,7 +254,7 @@ export class IonCityPicker implements AfterContentInit, ControlValueAccessor {
         {
           text: this.cancelText,
           handler: (data) => {
-            this.ionCancel.emit(null);
+            this.ionCancel.emit();
           }
       }, {
           text: this.doneText,
