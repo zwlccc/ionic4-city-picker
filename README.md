@@ -22,7 +22,7 @@ Github: [ionic2-city-picker](https://github.com/hsuanxyz/ionic2-city-picker)
 
 3.```npm run build``` ionic/core;
 
-4.copy ```dist``` folder to ```node_modules\@ionic\core```,overlay folder.
+4.copy ```dist``` folder file to ```node_modules\@ionic\core```,overlay folder.
 
 ## Installation
 ```
