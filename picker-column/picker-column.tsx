@@ -130,7 +130,10 @@ export class PickerColumnCmp implements ComponentInterface {
     const scaleStr = `scale(${this.scaleFactor})`;
 
     const children = this.optsEl.children;
-    for (let i = 0; i < children.length; i++) {
+    const children_length = this.optsEl.children.length;
+    const options_length = col.options.length;
+    const length = children_length < options_length ? options_length : children_length;
+    for (let i = 0; i < length; i++) {
       const button = children[i] as HTMLElement;
       const opt = col.options[i];
       const optOffset = (i * this.optHeight) + y;
@@ -162,12 +165,16 @@ export class PickerColumnCmp implements ComponentInterface {
         if(opt){
           opt.duration = 0;
         }
-        button.style.transitionDuration = '';
+        if(button){
+          button.style.transitionDuration = '';
+        }
 
-      } else if(opt){
+      } else if (opt){
         if (duration !== opt.duration) {
-          opt.duration = duration;
-          button.style.transitionDuration = durationStr;
+          opt.duration = duration; 
+          if(button){
+            button.style.transitionDuration = durationStr;
+          }
         }
       }
 
@@ -175,16 +182,18 @@ export class PickerColumnCmp implements ComponentInterface {
       if(opt){
         if (transform !== opt.transform) {
           opt.transform = transform;
-          button.style.transform = transform;
+          if(button){
+            button.style.transform = transform;
+          }
         }
       }
       // Update selected item
       if(opt){
         if (selected !== opt.selected) {
           opt.selected = selected;
-          if (selected) {
+          if (selected && button) {
             button.classList.add(PICKER_OPT_SELECTED);
-          } else {
+          } else if (button){
             button.classList.remove(PICKER_OPT_SELECTED);
           }
         }
@@ -385,7 +394,7 @@ export class PickerColumnCmp implements ComponentInterface {
         { col.options.map((o, index) =>
           <Button
             type="button"
-            class={{ 'picker-opt': true, 'picker-opt-disabled': !!o.disabled }}
+            class={{ 'picker-opt': true, 'picker-opt-disabled': !!o.disabled, 'picker-opt-selected': o.selected }}
             style={{ transform: o.transform ? o.transform : 'translate3d(0px, -9999px, 90px)', 'transition-duration': o.duration ? o.duration: TRANSITION_DURATION + 'ms' }}
             opt-index={index}
           >
