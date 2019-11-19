@@ -1,4 +1,4 @@
-1.open bion-datetime_3-ios.entry.js and ion-datetime_3-md.entry.js
+1.open ```ion-datetime_3-ios.entry.js``` and ```ion-datetime_3-md.entry.js```
 2.modify update function:
   ```
   update(y, duration, saveY) {
