@@ -28,7 +28,7 @@ a)ionic version == 4.4.2
 
 b)4.4.2<ionic version<=4.11.5
 
-1.modify ion-datetime_3-ios.entry.js and ion-datetime_3-md.entry.js([just here](https://github.com/zwlccc/ionic4-city-picker/blob/master/modify-datetime-entry-file)),js file path ```node_modules\@ionic\core\dist\esm```;
+1.modify ```ion-datetime_3-ios.entry.js``` and ```ion-datetime_3-md.entry.js```([just here](https://github.com/zwlccc/ionic4-city-picker/blob/master/modify-datetime-entry-file)),js file path ```node_modules\@ionic\core\dist\esm```;
   
 ## Installation
 ```
