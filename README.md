@@ -16,7 +16,7 @@ Github: [ionic2-city-picker](https://github.com/hsuanxyz/ionic2-city-picker)
 ![Picker with Dependent Columns](https://github.com/zwlccc/ionic4-city-picker/blob/master/img/repeatcss.gif?raw=true)
 
 ### If you project have this happens,you need:
-a)ionic version == 4.4.2
+a)ionic version <= 4.4.2
 
 1.download ionic core([ionic](https://github.com/ionic-team/ionic));
 
@@ -26,7 +26,7 @@ a)ionic version == 4.4.2
 
 4.copy ```dist``` folder file to ```node_modules\@ionic\core```,overlay folder.
 
-b)4.4.2<ionic version<=4.11.5
+b)4.4.2 < ionic version <= 4.11.5
 
 1.modify ```ion-datetime_3-ios.entry.js``` and ```ion-datetime_3-md.entry.js```([just here](https://github.com/zwlccc/ionic4-city-picker/blob/master/modify-datetime-entry-file))
 
