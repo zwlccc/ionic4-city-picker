@@ -1,6 +1,7 @@
 1.open bion-datetime_3-ios.entry.js and ion-datetime_3-md.entry.js
 2.modify update function:
-  ```update(y, duration, saveY) {
+  ```
+  update(y, duration, saveY) {
         if (!this.optsEl) {
             return;
         }
@@ -88,9 +89,11 @@
             hapticSelectionChanged();
             this.lastIndex = selectedIndex;
         }
-  }```
+  }
+```
 3.modify render function:
-  ```render() {
+  ```
+  render() {
         const col = this.col;
         const Button = 'button';
         const mode = getIonMode(this);
@@ -102,4 +105,5 @@
             }, style: {
                 'max-width': this.col.columnWidth
             } }, col.prefix && (h("div", { class: "picker-prefix", style: { width: col.prefixWidth } }, col.prefix)), h("div", { class: "picker-opts", style: { maxWidth: col.optionsWidth }, ref: el => this.optsEl = el }, col.options.map((o, index) => h(Button, { type: "button", class: { 'picker-opt': true, 'picker-opt-disabled': !!o.disabled, 'picker-opt-selected': o.selected }, style: { transform: o.transform ? o.transform : 'translate3d(0px, -9999px, 90px)', 'transition-duration': o.duration ? o.duration : TRANSITION_DURATION + 'ms' }, "opt-index": index }, o.text))), col.suffix && (h("div", { class: "picker-suffix", style: { width: col.suffixWidth } }, col.suffix))));
-    }```
+    }
+ ```
