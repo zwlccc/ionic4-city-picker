@@ -16,6 +16,7 @@ Github: [ionic2-city-picker](https://github.com/hsuanxyz/ionic2-city-picker)
 ![Picker with Dependent Columns](https://github.com/zwlccc/ionic4-city-picker/blob/master/img/repeatcss.gif?raw=true)
 
 ### If you project have this happens,you need:
+a)ionic version == 4.4.2
 1.download ionic core([ionic](https://github.com/ionic-team/ionic));
 
 2.modify picker-column.tsx file([just here](https://github.com/zwlccc/ionic4-city-picker/blob/master/picker-column/picker-column.tsx));
@@ -24,6 +25,9 @@ Github: [ionic2-city-picker](https://github.com/hsuanxyz/ionic2-city-picker)
 
 4.copy ```dist``` folder file to ```node_modules\@ionic\core```,overlay folder.
 
+b)4.4.2<ionic version<=4.11.5
+1.modify ion-datetime_3-ios.entry.js and ion-datetime_3-md.entry.js，file path ```node_modules\@ionic\core\dist\esm```([just here](https://github.com/zwlccc/ionic4-city-picker/blob/master/modify-datetime-entry-file));
+  
 ## Installation
 ```
 npm install ionic4-city-picker --save
